@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Measurement Result</title>
+</head>
+<body>
+    <h1>Height Measurement Result</h1>
+    <img src="{{ publicUrl }}" alt="Result Image" style="max-width: 100%; height: auto;">
+    <h2>List of Heights:</h2>
+    <ul>
+        {% for height in height_list %}
+            <li>{{ height }} cm</li>
+        {% endfor %}
+    </ul>
+    <p>Tallest Height: {{ tallest_height }} cm</p>
+</body>
+</html>

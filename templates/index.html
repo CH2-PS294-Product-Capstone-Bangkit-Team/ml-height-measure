@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Measurement App</title>
+</head>
+<body>
+    <h1>Height Measurement App</h1>
+    <form id="uploadForm" action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Upload Image:</label>
+        <input type="file" name="file" id="file" accept=".png, .jpg, .jpeg" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result" style="margin-top: 20px;"></div>
+    <script>
+        // Optional: You can add JavaScript code here for any additional client-side interactions.
+    </script>
+</body>
+</html>
